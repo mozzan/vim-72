@@ -3,7 +3,7 @@ set nocompatible
 set backspace=2
 set autoindent
 set modifiable
-set foldmethod=indent
+set foldmethod=syntax
 set foldlevel=99
 syntax on
 

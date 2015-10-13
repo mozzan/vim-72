@@ -2,7 +2,7 @@
 " Date: Fri Sep 26 20:43:59 CST 2014
 " Standard C syntax
 
-let b:current_syntax = "c"
+"let b:current_syntax = "c"
 
 " status
 highlight StatusLine ctermbg=196 ctermfg=109
