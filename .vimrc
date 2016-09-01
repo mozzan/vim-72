@@ -8,15 +8,21 @@ set foldlevel=99
 syntax on
 
 " TagList
-map <f9> :Tlist<CR>
-"autocmd BufWinEnter * Tlist
-autocmd VimEnter * Tlist
-let Tlist_WinWidth = 25
+let tlistOpened = 1
+map <f9> :TlistOpen<CR>
+autocmd BufWinEnter * TlistToggle
+"autocmd VimEnter * TlistOpen
+"autocmd VimEnter * TlistOpen
+let Tlist_File_Fold_Auto_Close=1
+"let Tlist_WinWidth = 25
+let Tlist_Show_One_File=1
+let Tlist_Use_Right_Window = 1
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Inc_Winwidth=0
 
 map <f4> :q<CR>
 map <f5> :e<CR>
 map <f7> :q<CR>:q<CR>:q<CR>
-let Tlist_Use_Right_Window = 1
 
 set tags=./tags;
 autocmd BufWritePre * :%s/\s\+$//e
@@ -55,7 +61,7 @@ cs add cscope.out
 "map f :cs find f
 "map c :cs find c
 "map s :cs find s
-nmap <C-h> :cs find s <C-R>=expand("<cword>")<CR><CR>
+"nmap <C-h> :cs find s <C-R>=expand("<cword>")<CR><CR>
 nmap <C-g> :cs find g <C-R>=expand("<cword>")<CR><CR>
 nmap <C-c> :cs find c <C-R>=expand("<cword>")<CR><CR>
 "nmap <C-t> :cs find t <C-R>=expand("<cword>")<CR><CR>
@@ -63,7 +69,7 @@ nmap <C-e> :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap <C-v> :cs find f <C-R>=expand("<cfile>")<CR><CR>
 "nmap <C-i> :cs find i <C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-d> :cs find d <C-R>=expand("<cword>")<CR><CR>
-"nmap <C-r> :cs reset<CR>
+nmap <C-\> :cs reset<CR>
 " nnoremap <C-]> :tabnew %<CR>g<C-]>
 
 " NerdTree
@@ -134,9 +140,8 @@ function! AutoHighlightToggle()
 endfunction
 
 
-
-
-
+nnoremap \ :! ./build_cscope && ./build_ctags % <CR>
+nnoremap m :so ~/.vimrc<CR>
 
 " activates filetype detection
 filetype plugin indent on

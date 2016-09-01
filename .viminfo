@@ -8,75 +8,117 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\V\<let\>
+~MSle0~/\V\<int\>
 
 # Last Substitute Search Pattern:
-~MSle0&syntax
+~MSle0&^M$
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :qa
-:scriptnames
-:w
-:75
-:1,$s/syntax/"syntax/g
-:5
 :q
-:65
-:36
-:qa!
-:82
-:q!a
-:qa:q
-:47
 :wqa
-:scriptnames:qa
-:28
-:2
-:88
-:1377
-:19
-:20
-:21
-:18
-:wq
-:11
-:37
-:14
-:35
-:9
-:cs reset 
-:31
+:w
+:qa!
+:147
+:357
+:180,185y
+:s
+:188,189y
+:188,189
+:set ff=unix
+:%s/^M$//
+:41
+:624
+:623
+:984
+:1085,1096y
+:111
+:543
+:942,943y
+:133,139y
+:930,932y
+:477,502y
+:496,497y
+:405
+:350
+:1078
+:1028
+:982
+:964
+:1072
+:1096
+:1068,1092y
+:1058,1061y
+:985,989y
+:1629,1633y
+:1005,1009y
+:995,999y
+:960,975y
+:988
+:1558
+:366
+:1598,1601y
+:234,237y
+:1579,1582y
+:440,464y
+:406,416y
+:423,435y
+:1500
 
 # Search String History (newest to oldest):
+?/Buffer
+?/buffer
+?/update_mail_statistic
+?/check_use_file
+?/add_mail
 ? \s\+$
-?/{
-? syntax
-?/syntax
-?/fold
-?/Fold
-?/.vim/after/ftplugin/c.vim
-?/_OUT)
-?/P
-?/parse_dn
-?/uint
-?/b
-?/_IN)
-?/pcap-int
-?/pcap-int.h
-? \ \ \ 
-? \ \ \ \ \ \ 
-?/parse_dns
-?/compile
-?/scan
-?/DEBUGLOG
-?/NDEBUG
-?/i
-?/found ans IP
-?/ans_print
-?/IN)
+?/user
+?/add_record_smtp_log
+?/detailId
+?/insert_smtp_log
+?/000
+?/printf
+?/seria
+?/init_remote_id
+?/pcre_match
+?/explode
+?/line
+?/split_head_res
+?/status
+?/insertTo
+? ^M$
+?/instead\ of
+?/init_
+?/init
+?/!!!
+?/!
+?/111
+?/insert_status
+?/mysql_store_result
+?/strcat_realloc
+?/create_table_from
+?/MAX
+?/strlen
+?/insert_id
+?/updateIdTable
+?/mail_content_log
+?/free_lock_tables_object
+?/prepare_query_cb
+?/link_filter_log
+?/g_ha
+?/g_hash
+?/noneRemoveArray
+?/array
+?/add_mail_
+?/add_mail_log
+?/connection\ close
+?/connection
+?/strcat_no_alloc
+?/calloc
+?/lloc
 
 # Expression History (newest to oldest):
 
@@ -86,303 +128,354 @@ $
 
 # Registers:
 "0	LINE	0
-			LOG(LOG_INFO, "query srcIP = %s", inet_ntop(AF_INET, srcip, GLOBAL_IPBUF));
-			LOG(LOG_INFO, "query dstIP = %s", inet_ntop(AF_INET, dstip, GLOBAL_IPBUF));
+		int *statusId = malloc(sizeof(int));
+		if(statusId)
+		{
+			*statusId = value;
+			g_hash_table_insert(postfixlog.statusTable, key, statusId);
+		}
 ""1	LINE	0
-		a = t;
+		printf("hihi");
 "2	LINE	0
-		strcpy(s, t);
+		printf("hihi");
 "3	LINE	0
-		char *s = "abc";
+				g_hash_table_destroy(table);
 "4	LINE	0
-		char t[25];
+		char *date = (mailto->date != NULL) ? mailto->date : ((mailfrom->date != NULL) ? mailfrom->date : "");
 "5	LINE	0
-	#endif
+				printf("4\n");
 "6	LINE	0
-		printf("no win32");
+				printf("3\n");
 "7	LINE	0
-	#else
+				printf("2\n");
 "8	LINE	0
-		printf("win32");
+				printf("1\n");
 "9	LINE	0
-	#ifdef WIN32
+				g_hash_table_destroy(table);
+"a	CHAR	0
+	
+"q	CHAR	0
+	ww
+"w	CHAR	0
+	www
 "-	CHAR	0
-		
+	%
 
 # File marks:
-'0  1  0  ~/.vimrc
-'1  47  1  /HDD/harry/workspace/dnscache-1.3/src/dnscache.c
-'2  1  0  /HDD/harry/workspace/dnscache-1.3/src/dnscache.c
-'3  1  0  ~/.vim/syntax/c.vim
-'4  5  0  ~/.vim/syntax/c.vim
-'5  1  0  /HDD/harry/workspace/postfixlog/NERD_tree_1
-'6  28  1  /HDD/harry/workspace/postfixlog/src/postfixlog.c
-'7  1  0  /HDD/harry/workspace/postfixlog/src/postfixlog.c
-'8  46  1  /HDD/harry/workspace/postfixlog/src/postfixlog.c
-'9  44  0  /HDD/harry/workspace/dnscache-1.3/src/dnscache.c
+'0  1031  3  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+'1  64  1  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+'2  66  14  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+'3  470  1  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+'4  478  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+'5  489  12  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+'6  46  4  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/log.c
+'7  921  88  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+'8  40  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+'9  123  29  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
 
 # Jumplist (newest first):
--'  1  0  ~/.vimrc
--'  47  1  /HDD/harry/workspace/dnscache-1.3/src/dnscache.c
--'  1  0  /HDD/harry/workspace/dnscache-1.3/src/dnscache.c
--'  1  0  ~/.vim/syntax/c.vim
--'  5  0  ~/.vim/syntax/c.vim
--'  75  33  ~/.vim/syntax/c.vim
--'  63  58  ~/.vim/syntax/c.vim
--'  96  41  ~/.vim/syntax/c.vim
--'  91  0  ~/.vim/syntax/c.vim
--'  76  0  ~/.vim/syntax/c.vim
--'  77  0  ~/.vim/syntax/c.vim
--'  78  0  ~/.vim/syntax/c.vim
--'  79  0  ~/.vim/syntax/c.vim
--'  64  0  ~/.vim/syntax/c.vim
--'  65  0  ~/.vim/syntax/c.vim
--'  66  0  ~/.vim/syntax/c.vim
--'  112  0  ~/.vim/syntax/c.vim
--'  47  0  ~/.vim/syntax/c.vim
--'  19  0  ~/.vim/syntax/c.vim
--'  18  0  ~/.vim/syntax/c.vim
--'  17  0  ~/.vim/syntax/c.vim
--'  16  0  ~/.vim/syntax/c.vim
--'  8  0  ~/.vim/syntax/c.vim
--'  11  0  ~/.vim/syntax/c.vim
--'  52  0  ~/.vim/syntax/c.vim
--'  10  6  ~/.vim/syntax/c.vim
--'  1  0  /HDD/harry/workspace/postfixlog/NERD_tree_1
--'  76  0  /HDD/harry/workspace/postfixlog/NERD_tree_1
--'  28  1  /HDD/harry/workspace/postfixlog/src/postfixlog.c
--'  1  0  /HDD/harry/workspace/postfixlog/src/postfixlog.c
--'  46  1  /HDD/harry/workspace/postfixlog/src/postfixlog.c
--'  44  0  /HDD/harry/workspace/dnscache-1.3/src/dnscache.c
--'  6  0  ~/.vimrc
--'  96  1  /HDD/harry/workspace/dnscache-1.3/src/dnscache.c
--'  82  1  /HDD/harry/workspace/dnscache-1.3/src/dnscache.c
--'  27  0  /HDD/harry/workspace/postfixlog/src/postfixlog.c
--'  91  0  ~/.viminfo
--'  1  0  ~/.viminfo
--'  76  4  /harry/workspace/dnscache/src/dnscache.c
--'  1  0  /harry/workspace/dnscache/src/dnscache.c
--'  15  24  /harry/workspace/dnscache-sdn-1.4/src/configs.c
--'  7  0  /harry/workspace/dnscache-sdn-1.4/NERD_tree_2
--'  40  0  /harry/workspace/dnscache-sdn-1.4/NERD_tree_2
--'  1  0  /harry/workspace/dnscache-sdn-1.4/NERD_tree_2
--'  1  0  /harry/workspace/dnscache-sdn-1.4/src/dnscache.c
--'  44  0  /harry/workspace/dnscache-sdn-1.4/NERD_tree_2
--'  86  0  /harry/workspace/dnscache-sdn-1.4/NERD_tree_2
--'  1087  4  /harry/workspace/dnscache/src/dnscache.c
--'  46  0  /harry/workspace/dnscache/src/dnscache.c
--'  47  0  /harry/workspace/dnscache/src/dnscache.h
--'  1  0  /harry/workspace/dnscache/src/dnscache.h
--'  91  0  /harry/workspace/dnscache/src/dnscache.h
--'  257  1  /harry/workspace/dnscache/src/packet.c
--'  95  17  /harry/workspace/dnscache/src/server_cb.c
--'  1  0  /harry/workspace/dnscache/src/server_cb.c
--'  613  0  /harry/workspace/dnscache/src/dnscache.c
--'  289  3  /harry/workspace/dnscache/src/dnscache.c
--'  273  3  /harry/workspace/dnscache/src/dnscache.c
--'  78  12  /harry/workspace/dnscache/src/dnscache.c
--'  299  12  /harry/workspace/dnscache/src/dnscache.c
--'  88  1  /harry/workspace/dnscache/src/dnscache.c
--'  1  0  /harry/workspace/dnscache/src/Makefile.am
--'  66  1  /harry/workspace/dnscache/src/dnscache.c
--'  252  0  /harry/workspace/dnscache/NERD_tree_2
--'  253  0  /harry/workspace/dnscache/NERD_tree_2
--'  1  0  /harry/workspace/dnscache/src/configs.h
--'  242  0  /harry/workspace/dnscache/NERD_tree_2
--'  289  0  /harry/workspace/dnscache/NERD_tree_2
--'  1  0  /harry/workspace/dnscache/NERD_tree_2
--'  1  0  /harry/workspace/dnscache/src/iphdr_tool.h
--'  55  0  /harry/workspace/dnsproxy/src/dnsproxy.c
--'  88  45  /harry/workspace/dnsproxy/src/dnsproxy.c
--'  1  0  /HDD/harry/workspace/postfixlog/NERD_tree_1
--'  1  0  ~/.vim/syntax/c.vim
--'  5  0  ~/.vim/syntax/c.vim
--'  75  33  ~/.vim/syntax/c.vim
--'  63  58  ~/.vim/syntax/c.vim
--'  96  41  ~/.vim/syntax/c.vim
--'  91  0  ~/.vim/syntax/c.vim
--'  76  0  ~/.vim/syntax/c.vim
--'  77  0  ~/.vim/syntax/c.vim
--'  78  0  ~/.vim/syntax/c.vim
--'  79  0  ~/.vim/syntax/c.vim
--'  64  0  ~/.vim/syntax/c.vim
--'  65  0  ~/.vim/syntax/c.vim
--'  66  0  ~/.vim/syntax/c.vim
--'  112  0  ~/.vim/syntax/c.vim
--'  47  0  ~/.vim/syntax/c.vim
--'  19  0  ~/.vim/syntax/c.vim
--'  18  0  ~/.vim/syntax/c.vim
--'  17  0  ~/.vim/syntax/c.vim
--'  16  0  ~/.vim/syntax/c.vim
--'  8  0  ~/.vim/syntax/c.vim
--'  11  0  ~/.vim/syntax/c.vim
--'  52  0  ~/.vim/syntax/c.vim
--'  10  6  ~/.vim/syntax/c.vim
--'  47  1  /HDD/harry/workspace/dnscache-1.3/src/dnscache.c
--'  1  0  /HDD/harry/workspace/dnscache-1.3/src/dnscache.c
+-'  1031  3  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  991  9  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  1078  11  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  995  9  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  1649  12  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  35  12  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  1729  42  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  1711  12  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  1701  42  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  1699  40  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  1697  40  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  1695  12  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  1693  25  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  1651  7  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  1709  77  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  1213  2  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  982  3  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  980  6  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  424  12  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  482  1  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  133  1  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  1  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  64  1  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  490  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  66  14  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  350  15  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  467  15  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  470  1  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  478  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  489  12  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  2  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  46  4  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/log.c
+-'  225  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/NERD_tree_2
+-'  270  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/NERD_tree_2
+-'  1  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/NERD_tree_2
+-'  921  88  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  343  13  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_log.c
+-'  341  26  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_log.c
+-'  340  7  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_log.c
+-'  339  72  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_log.c
+-'  329  10  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_log.c
+-'  325  33  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_log.c
+-'  300  7  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_log.c
+-'  274  6  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_log.c
+-'  926  13  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  294  1  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  342  17  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_log.c
+-'  288  3  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  40  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  123  29  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  352  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/NERD_tree_2
+-'  378  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/NERD_tree_2
+-'  1  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  304  4  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  196  4  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  82  6  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_log.c
+-'  280  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_log.c
+-'  448  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/NERD_tree_2
+-'  486  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/NERD_tree_2
+-'  42  32  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  1  0  /PGRAM/ruby-2.2.4/lib/ruby/gems/2.2.0/doc/passenger-5.0.24/ri/PhusionPassenger/Config/Utils/list_all_passenger_instances-i.ri
+-'  464  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  533  40  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  1571  11  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  529  71  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  528  11  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  491  24  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  449  40  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  442  40  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  440  97  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  25  11  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+-'  113  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  108  5  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  122  30  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  39  6  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/config.c
+-'  14  49  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/config.c
+-'  147  1  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  624  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/NERD_tree_2
+-'  650  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/NERD_tree_2
+-'  31  53  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  5  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  106  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  732  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/NERD_tree_2
+-'  1  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_log.c
+-'  720  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/NERD_tree_2
+-'  758  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/NERD_tree_2
+-'  70  0  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_log.c
+-'  50  28  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+-'  48  6  /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
 
 # History of marks within files (newest to oldest):
 
-> ~/.vimrc
-	"	1	0
-	^	6	21
-	.	6	20
-	+	136	0
-	+	154	30
-	+	138	0
-	+	140	0
-	+	6	20
-	+	7	15
-	+	14	22
-	+	75	23
-	+	28	0
-	+	26	0
-	+	12	0
-	+	13	25
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.c
+	"	424	12
+	^	470	2
+	.	470	2
+	+	491	0
+	+	491	8
+	+	491	20
+	+	491	12
+	+	491	20
+	+	491	14
+	+	491	71
+	+	488	9
+	+	488	44
+	+	491	18
+	+	491	30
+	+	491	0
+	+	491	0
+	+	37	25
+	+	38	25
+	+	39	29
+	+	40	43
+	+	41	32
+	+	488	2
+	+	488	15
+	+	486	24
+	+	478	1
+	+	468	3
+	+	469	3
+	+	279	10
+	+	281	0
+	+	469	0
+	+	488	12
+	+	488	23
+	+	488	20
+	+	488	35
+	+	488	16
+	+	478	2
+	+	486	25
+	+	469	0
+	+	488	2
+	+	488	24
+	+	479	1
+	+	487	26
+	+	479	0
+	+	199	0
+	+	469	2
+	+	469	0
+	+	479	0
+	+	38	24
+	+	39	28
+	+	41	31
+	+	37	24
+	+	40	42
+	+	488	0
+	+	491	0
+	+	468	2
+	+	469	2
 	+	14	0
-	+	13	0
-	+	21	0
-	+	21	32
-	+	21	0
-	+	8	0
-	+	46	19
-	+	6	20
-
-> /HDD/harry/workspace/dnscache-1.3/__Tag_List__
-	"	3	0
-	.	24	0
-	+	346	0
-	+	381	0
-	+	297	0
-	+	292	0
-	+	243	0
-	+	194	0
-	+	145	0
-	+	96	0
-	+	47	0
-	+	24	0
-
-> /HDD/harry/workspace/dnscache-1.3/NERD_tree_1
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> /HDD/harry/workspace/dnscache-1.3/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> /HDD/harry/workspace/dnscache-1.3/src/dnscache.c
-	"	47	1
-	^	47	2
-	.	47	0
-	+	82	0
-	+	47	0
-
-> ~/.vim/syntax/c.vim
-	"	1	0
-	^	5	0
-	.	5	0
-	+	11	0
-	+	5	0
-	+	8	0
-	+	5	0
-	+	3	0
-	+	63	0
-	+	64	0
-	+	65	0
-	+	63	0
-	+	75	0
-	+	76	0
-	+	77	0
-	+	78	0
-	+	75	0
-	+	5	0
-
-> /HDD/harry/workspace/__Tag_List__
-	"	1	0
-	.	1	0
-	+	65	0
-	+	44	0
-	+	23	0
-	+	20	0
-	+	15	0
-	+	12	0
-	+	7	0
-	+	1	0
-
-> /HDD/harry/workspace/NERD_tree_1
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> /HDD/harry/workspace/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> /HDD/harry/workspace/dnscache-1.3/src/dnscache.h
-	"	67	1
-
-> /HDD/harry/workspace/postfixlog/__Tag_List__
-	"	14	4
-	.	50	0
-	+	841	0
-	+	799	0
-	+	819	0
-	+	798	0
-	+	777	0
-	+	756	0
-	+	686	0
-	+	734	0
-	+	685	0
-	+	636	0
-	+	587	0
-	+	538	0
+	+	196	129
+	+	196	0
+	+	196	116
+	+	196	20
+	+	480	2
+	+	488	26
+	+	489	29
+	+	489	20
 	+	489	0
-	+	391	0
-	+	439	0
-	+	390	0
-	+	341	0
-	+	292	0
-	+	243	0
-	+	194	0
-	+	171	0
+	+	488	24
+	+	480	1
+	+	37	32
+	+	38	25
+	+	39	25
+	+	40	29
+	+	41	43
+	+	42	32
+	+	470	3
+	+	280	8
+	+	283	20
+	+	280	0
+	+	283	0
+	+	470	2
+	+	478	2
+	+	489	20
+	+	31	53
+	+	122	3
 	+	122	0
-	+	99	0
-	+	50	0
+	+	37	32
+	+	38	25
+	+	39	25
+	+	40	29
+	+	41	43
+	+	42	32
+	+	122	3
+	+	123	29
+	+	470	3
+	+	478	2
+	+	489	0
+	+	488	24
+	+	478	1
+	+	489	0
+	+	488	24
+	+	478	1
+	+	469	2
+	+	470	2
 
-> /HDD/harry/workspace/postfixlog/NERD_tree_1
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/__Tag_List__
+	"	2	0
+	.	74	0
+	+	1689	0
+	+	1671	0
+	+	1670	0
+	+	1652	0
+	+	1651	0
+	+	1633	0
+	+	1632	0
+	+	1606	0
+	+	1605	0
+	+	1579	0
+	+	1578	0
+	+	1552	0
+	+	1551	0
+	+	1525	0
+	+	1525	0
+	+	1524	0
+	+	1506	0
+	+	1505	0
+	+	1487	0
+	+	1486	0
+	+	1468	0
+	+	1467	0
+	+	1449	0
+	+	1448	0
+	+	1430	0
+	+	1429	0
+	+	1411	0
+	+	1410	0
+	+	1392	0
+	+	1391	0
+	+	1373	0
+	+	1372	0
+	+	1354	0
+	+	1353	0
+	+	1253	0
+	+	1336	0
+	+	1336	0
+	+	1336	0
+	+	1335	0
+	+	1253	0
+	+	1253	0
+	+	1253	0
+	+	1310	0
+	+	1252	0
+	+	1194	0
+	+	1137	0
+	+	1136	0
+	+	1118	0
+	+	1117	0
+	+	1043	0
+	+	1043	0
+	+	1043	0
+	+	1100	0
+	+	1042	0
+	+	984	0
+	+	926	0
+	+	853	0
+	+	796	0
+	+	795	0
+	+	777	0
+	+	776	0
+	+	758	0
+	+	757	0
+	+	739	0
+	+	738	0
+	+	720	0
+	+	719	0
+	+	701	0
+	+	700	0
+	+	681	0
+	+	552	0
+	+	609	0
+	+	551	0
+	+	494	0
+	+	493	0
+	+	475	0
+	+	474	0
+	+	456	0
+	+	455	0
+	+	436	0
+	+	360	0
+	+	360	0
+	+	365	0
+	+	359	0
+	+	301	0
+	+	187	0
+	+	245	0
+	+	244	0
+	+	186	0
+	+	128	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	75	0
+	+	75	0
+	+	74	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/NERD_tree_1
 	"	4	0
 	.	1	0
 	+	1	0
@@ -409,9 +502,41 @@ $
 	+	1	0
 	+	1	0
 	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
 
-> /HDD/harry/workspace/postfixlog/NERD_tree_2
-	"	4	0
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/NERD_tree_2
+	"	1	0
 	.	1	0
 	+	1	0
 	+	1	0
@@ -437,38 +562,651 @@ $
 	+	1	0
 	+	1	0
 	+	1	0
-
-> /HDD/harry/workspace/postfixlog/NERD_tree_3
-	"	4	0
-	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
 	+	1	0
 
-> /HDD/harry/workspace/postfixlog/src/postfixlog.c
-	"	28	1
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_log.c
+	"	312	6
+	^	280	38
+	.	80	0
+	+	821	0
+	+	325	42
+	+	342	87
+	+	357	32
+	+	359	59
+	+	28	57
+	+	31	30
+	+	361	60
+	+	68	13
+	+	72	13
+	+	76	13
+	+	80	13
+	+	374	15
+	+	385	55
+	+	384	66
+	+	279	79
+	+	280	37
+	+	68	0
+	+	72	0
+	+	76	0
+	+	80	0
 
-> /usr/local/share/vim/vim74/syntax/syncolor.vim
-	"	47	2
-
-> ~/.vim/autoload/omni/cpp/settings.vim
-	"	91	4
-
-> ~/.vim/after/ftplugin/c.vim
+> /usr/local/share/vim/vim74/doc/help.txt
 	"	1	0
 
-> ~/.vim/after/syntax/c.vim
-	"	91	0
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.c
+	"	1031	3
+	^	921	29
+	.	921	28
+	+	1105	0
+	+	1096	0
+	+	207	19
+	+	209	29
+	+	211	0
+	+	375	19
+	+	377	30
+	+	379	0
+	+	377	0
+	+	708	0
+	+	706	29
+	+	708	0
+	+	1048	23
+	+	1052	21
+	+	1054	0
+	+	1158	29
+	+	1164	0
+	+	942	29
+	+	939	0
+	+	942	0
+	+	940	0
+	+	940	0
+	+	1106	0
+	+	1124	0
+	+	1154	24
+	+	1159	64
+	+	1154	18
+	+	1164	31
+	+	1162	2
+	+	1164	0
+	+	1162	48
+	+	1154	36
+	+	1154	2
+	+	1154	0
+	+	925	0
+	+	1084	43
+	+	1086	28
+	+	1115	3
+	+	1114	10
+	+	1129	0
+	+	1134	9
+	+	1006	15
+	+	1008	28
+	+	1029	0
+	+	1045	3
+	+	1071	0
+	+	1059	0
+	+	1071	0
+	+	1086	5
+	+	1076	9
+	+	1008	5
+	+	1733	0
+	+	1721	0
+	+	1715	0
+	+	1033	0
+	+	1108	0
+	+	1105	0
+	+	1150	0
+	+	1154	0
+	+	1159	0
+	+	814	0
+	+	942	0
+	+	1026	0
+	+	143	26
+	+	145	15
+	+	163	0
+	+	151	2
+	+	147	20
+	+	151	31
+	+	149	17
+	+	149	2
+	+	151	32
+	+	150	0
+	+	150	100
+	+	151	44
+	+	160	13
+	+	163	0
+	+	161	15
+	+	147	37
+	+	149	0
+	+	152	19
+	+	159	3
+	+	154	0
+	+	157	17
+	+	157	50
+	+	159	0
+	+	154	7
+	+	155	10
+	+	157	9
+	+	159	0
+	+	157	0
+	+	365	30
+	+	312	11
+	+	306	38
+	+	306	11
+	+	311	135
+	+	306	161
+	+	308	11
+	+	921	226
+	+	921	28
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/log.c
+	"	173	2
+	^	173	3
+	.	173	2
+	+	171	2
+	+	172	2
+	+	173	2
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_log.h
+	"	43	1
+
+> /PGRAM/ruby-2.2.4/lib/ruby/gems/2.2.0/doc/passenger-5.0.24/ri/PhusionPassenger/Config/Utils/list_all_passenger_instances-i.ri
+	"	1	0
+
+> /HDD/harry/workspace/ruby-2.2.4 2/__Tag_List__
+	"	2	0
+	.	1	0
+	+	1	0
+
+> /HDD/harry/workspace/ruby-2.2.4 2/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /HDD/harry/workspace/ruby-2.2.4 2/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/config.c
+	"	39	6
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/__Tag_List__
+	"	37	4
+	.	59	0
+	+	59	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/utility.c
+	"	246	5
+	^	160	32
+	.	247	0
+	+	397	1
+	+	397	51
+	+	397	0
+	+	397	39
+	+	397	34
+	+	397	11
+	+	397	32
+	+	397	0
+	+	397	1
+	+	397	0
+	+	246	30
+	+	247	30
+	+	246	28
+	+	247	28
+	+	147	28
+	+	154	23
+	+	158	21
+	+	160	13
+	+	169	13
+	+	158	23
+	+	170	25
+	+	163	0
+	+	160	21
+	+	161	77
+	+	163	0
+	+	161	0
+	+	164	46
+	+	166	0
+	+	161	0
+	+	160	0
+	+	147	0
+	+	154	0
+	+	158	0
+	+	169	0
+	+	170	0
+	+	246	0
+	+	247	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog
+	"	1	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.h
+	"	95	0
+	^	95	7
+	.	95	0
+	+	94	35
+	+	95	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/mysql_tool.c
+	"	115	0
+	^	539	9
+	.	173	0
+	+	501	0
+	+	501	1
+	+	501	0
+	+	475	15
+	+	479	10
+	+	486	10
+	+	481	90
+	+	493	20
+	+	473	3
+	+	481	34
+	+	501	0
+	+	482	18
+	+	490	13
+	+	493	14
+	+	494	14
+	+	493	26
+	+	492	12
+	+	493	0
+	+	494	0
+	+	493	2
+	+	490	0
+	+	482	0
+	+	362	0
+	+	358	9
+	+	358	0
+	+	373	3
+	+	371	35
+	+	373	40
+	+	371	10
+	+	373	0
+	+	372	0
+	+	373	43
+	+	381	2
+	+	386	10
+	+	392	11
+	+	394	9
+	+	351	24
+	+	351	38
+	+	8	18
+	+	526	1
+	+	503	42
+	+	526	0
+	+	505	14
+	+	509	9
+	+	516	9
+	+	519	0
+	+	523	0
+	+	521	10
+	+	519	15
+	+	522	24
+	+	524	0
+	+	511	134
+	+	511	34
+	+	521	14
+	+	522	31
+	+	518	24
+	+	518	35
+	+	521	0
+	+	522	0
+	+	522	0
+	+	518	0
+	+	541	1
+	+	529	52
+	+	531	0
+	+	540	729
+	+	540	38
+	+	541	0
+	+	529	2
+	+	536	0
+	+	541	0
+	+	540	42
+	+	541	32
+	+	540	18
+	+	536	34
+	+	531	16
+	+	534	10
+	+	531	14
+	+	534	9
+	+	540	0
+	+	541	0
+	+	540	7
+	+	531	0
+	+	276	17
+	+	278	18
+	+	280	19
+	+	190	0
+	+	173	27
+	+	205	30
+	+	538	51
+	+	539	0
+	+	540	13
+	+	539	0
+	+	276	0
+	+	278	0
+	+	280	0
+	+	351	0
+	+	355	0
+	+	205	0
+	+	172	0
+	+	173	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/parse_tool.h
+	"	45	1
+	.	49	0
+	+	49	14
+	+	49	1
+	+	49	1
+	+	49	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/config.h
+	"	3	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/log.h
+	"	1	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/Makefile
+	"	265	0
+	.	83	0
+	+	83	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/Makefile.am
+	"	1	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/Makefile.in
+	"	266	0
+	.	161	0
+	+	161	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/mysql_tool.h
+	"	2	0
+	^	39	0
+	.	38	54
+	+	23	39
+	+	24	0
+	+	24	0
+	+	23	49
+	+	24	45
+	+	23	50
+	+	24	57
+	+	27	86
+	+	22	0
+	+	10	1
+	+	14	17
+	+	10	0
+	+	14	17
+	+	10	18
+	+	11	16
+	+	12	13
+	+	13	15
+	+	22	0
+	+	27	60
+	+	29	50
+	+	40	0
+	+	29	51
+	+	27	18
+	+	13	16
+	+	30	46
+	+	16	15
+	+	18	1
+	+	20	15
+	+	8	0
+	+	19	0
+	+	30	31
+	+	5	24
+	+	31	40
+	+	30	28
+	+	31	27
+	+	32	47
+	+	6	22
+	+	33	54
+	+	34	66
+	+	35	31
+	+	36	61
+	+	37	44
+	+	38	54
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/utility.h
+	"	1	0
+
+> /HDD/harry/workspace/rspamd/src/controller.c
+	"	2278	0
+
+> /HDD/harry/workspace/rspamd/__Tag_List__
+	"	85	4
+	.	90	0
+	+	990	0
+	+	938	0
+	+	886	0
+	+	860	0
+	+	834	0
+	+	833	0
+	+	751	0
+	+	750	0
+	+	668	0
+	+	667	0
+	+	606	0
+	+	605	0
+	+	465	0
+	+	399	0
+	+	333	0
+	+	315	0
+	+	323	0
+	+	314	0
+	+	275	0
+	+	202	0
+	+	245	0
+	+	200	0
+	+	199	0
+	+	180	0
+	+	198	0
+	+	179	0
+	+	90	0
+
+> /HDD/harry/workspace/rspamd/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /HDD/harry/workspace/rspamd/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /HDD/harry/workspace/rspamd/src/rspamadm/control.c
+	"	83	34
+
+> /HDD/harry/workspace/rspamd/CMakeLists.txt
+	"	76	2
+	^	624	82
+	.	624	82
+	+	624	82
+
+> /HDD/harry/workspace/rspamd/src/libserver/task.h
+	"	1	0
+
+> /usr/local/lib/pkgconfig/glib-2.0.pc
+	"	1	0
 
 > ~/__Tag_List__
-	"	1	0
-	.	4	0
-	+	21	0
-	+	10	0
-	+	7	0
+	"	2	0
+	.	1	0
+	+	321	0
+	+	320	0
+	+	319	0
+	+	318	0
+	+	317	0
+	+	255	0
+	+	316	0
+	+	253	0
+	+	252	0
+	+	251	0
+	+	250	0
+	+	249	0
+	+	248	0
+	+	247	0
+	+	246	0
+	+	245	0
+	+	244	0
+	+	243	0
+	+	242	0
+	+	241	0
+	+	240	0
+	+	239	0
+	+	238	0
+	+	237	0
+	+	236	0
+	+	235	0
+	+	192	0
+	+	234	0
+	+	191	0
+	+	131	0
+	+	65	0
+	+	52	0
+	+	38	0
+	+	9	0
+	+	5	0
 	+	4	0
+	+	3	0
+	+	2	0
+	+	1	0
 
 > ~/NERD_tree_1
 	"	4	0
 	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
 	+	1	0
 	+	1	0
 	+	1	0
@@ -481,506 +1219,632 @@ $
 	+	1	0
 	+	1	0
 	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
 
-> /HDD/harry/workspace/vim/__Tag_List__
-	"	1	0
+> /HDD/harry/workspace/rspamd/rspamd.build/__Tag_List__
+	"	2	0
 	.	1	0
-	+	294	0
-	+	245	0
-	+	196	0
-	+	147	0
-	+	98	0
-	+	75	0
-	+	52	0
-	+	2	0
-	+	1	0
-
-> /HDD/harry/workspace/vim/NERD_tree_1
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> /HDD/harry/workspace/vim/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> /usr/local/share/vim/vim74/indent.vim
-	"	1	0
-
-> /harry/workspace/dnscache/__Tag_List__
-	"	3	0
-	.	24	0
-	+	2674	0
-	+	2674	0
-	+	2674	0
-	+	2754	0
-	+	2673	0
-	+	2573	0
-	+	2622	0
-	+	2572	0
-	+	2522	0
-	+	2465	0
-	+	2472	0
-	+	2415	0
-	+	2358	0
-	+	2301	0
-	+	2245	0
-	+	2244	0
-	+	2129	0
-	+	2129	0
-	+	2189	0
-	+	2128	0
-	+	1967	0
-	+	2071	0
-	+	2077	0
-	+	1967	0
-	+	2022	0
-	+	2016	0
-	+	1965	0
-	+	1893	0
-	+	1915	0
-	+	1964	0
-	+	1892	0
-	+	1869	0
-	+	1819	0
-	+	1730	0
-	+	1768	0
-	+	1680	0
-	+	1592	0
-	+	1401	0
-	+	1501	0
-	+	1542	0
-	+	1209	0
-	+	1350	0
-	+	1207	0
-	+	1206	0
-	+	1157	0
-	+	1206	0
-	+	1206	0
-	+	1206	0
-	+	1205	0
-	+	1140	0
-	+	1156	0
-	+	1091	0
-	+	1042	0
-	+	993	0
-	+	944	0
-	+	895	0
-	+	846	0
-	+	803	0
-	+	754	0
-	+	669	0
-	+	704	0
-	+	668	0
-	+	619	0
-	+	492	0
-	+	541	0
-	+	547	0
-	+	541	0
-	+	541	0
-	+	541	0
-	+	570	0
-	+	555	0
-	+	569	0
-	+	554	0
-	+	541	0
-	+	540	0
-	+	488	0
-	+	490	0
-	+	487	0
-	+	433	0
-	+	334	0
-	+	382	0
-	+	389	0
-	+	326	0
-	+	333	0
-	+	276	0
-	+	275	0
-	+	274	0
-	+	273	0
-	+	268	0
-	+	272	0
-	+	218	0
-	+	266	0
-	+	201	0
-	+	217	0
-	+	195	0
-	+	159	0
-	+	123	0
-	+	74	0
-	+	2	0
-	+	24	0
-
-> /harry/workspace/dnscache/NERD_tree_1
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> /harry/workspace/dnscache/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/.viminfo
-	"	91	0
-
-> /harry/workspace/dnscache/src/dnscache.c
-	"	76	4
-	^	284	98
-	.	284	97
-	+	2	95
-	+	2	46
-	+	2	0
-	+	2	0
-	+	2	23
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	80
-	+	2	38
-	+	2	0
-	+	2	0
-	+	2	47
-	+	2	11
-	+	2	12
-	+	2	26
-	+	2	0
-	+	2	0
-	+	2	39
-	+	2	0
-	+	2	3
-	+	2	0
-	+	2	0
-	+	24	0
-	+	1291	0
-	+	44	0
-	+	197	2
-	+	39	15
-	+	40	0
-	+	433	105
-	+	433	10
-	+	433	114
-	+	441	10
-	+	441	113
-	+	930	62
-	+	930	97
-	+	930	30
-	+	1219	5
-	+	1219	116
-	+	1219	99
-	+	433	0
-	+	431	0
-	+	441	0
-	+	930	22
-	+	1219	0
-	+	930	19
-	+	481	45
-	+	483	13
-	+	484	10
-	+	485	0
-	+	487	0
-	+	930	22
-	+	934	0
-	+	933	66
-	+	937	63
-	+	757	47
-	+	392	27
-	+	436	31
-	+	757	47
-	+	697	47
-	+	757	46
-	+	1310	143
-	+	1310	0
-	+	1309	0
-	+	1310	148
-	+	1311	149
-	+	1313	0
-	+	1312	142
-	+	761	0
-	+	270	0
-	+	270	0
-	+	311	45
-	+	289	0
-	+	270	0
-	+	552	63
-	+	553	13
+	+	105	0
+	+	156	0
+	+	104	0
 	+	73	0
-	+	74	102
-	+	75	45
-	+	771	5
-	+	792	71
-	+	75	0
-	+	74	0
-	+	304	58
-	+	284	33
-	+	74	0
-	+	75	43
-	+	771	5
-	+	792	71
-	+	75	0
-	+	74	0
-	+	76	76
-	+	771	5
-	+	793	71
-	+	76	53
-	+	761	46
-	+	76	45
-	+	687	47
-	+	284	97
+	+	84	0
+	+	72	0
+	+	5	0
+	+	4	0
+	+	3	0
+	+	2	0
+	+	1	0
 
-> /harry/workspace/dnscache-sdn-1.4/src/dnscache.c
+> /HDD/harry/workspace/rspamd/rspamd.build/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /HDD/harry/workspace/rspamd/rspamd.build/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /HDD/harry/workspace/rspamd/rspamd.build/CMakeLists.txt
 	"	1	0
 
-> /harry/workspace/dnscache-sdn-1.4/__Tag_List__
-	"	3	0
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/src/postfixlog.
+	"	1	0
+
+> ~/.ssh/config
+	"	1	0
+
+> /PGRAM/mysql/include/mysql/my_sys.h
+	"	23	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/info.2016-05-17
+	"	2571	0
+	^	195	78
 	.	50	0
-	+	99	0
+	+	2721	0
 	+	50	0
 
-> /harry/workspace/dnscache-sdn-1.4/NERD_tree_1
+> /HDD/harry/workspace/mailfront/Gemfile
+	"	14	0
+
+> /HDD/harry/workspace/mailfront/__Tag_List__
+	"	3	0
+	.	4	0
+	+	10	0
+	+	7	0
+	+	4	0
+
+> /HDD/harry/workspace/mailfront/NERD_tree_1
 	"	4	0
 	.	1	0
 	+	1	0
 	+	1	0
+	+	1	0
 
-> /harry/workspace/dnscache-sdn-1.4/NERD_tree_2
+> /HDD/harry/workspace/mailfront/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ./modules.d/fuzzy_check.conf
 	"	1	0
+
+> /HDD/harry/workspace/node-v0.8.22/__Tag_List__
+	"	2	0
+	.	1	0
+	+	1	0
+
+> /HDD/harry/workspace/node-v0.8.22/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /HDD/harry/workspace/node-v0.8.22/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /HDD/harry/workspace/node-v0.1.100/tools/wafadmin/Scripting.py
+	"	146	1
+
+> /HDD/harry/workspace/node-v0.1.100/__Tag_List__
+	"	3	0
+	.	24	0
+	+	75	0
+	+	72	0
+	+	47	0
+	+	24	0
+
+> /HDD/harry/workspace/node-v0.1.100/NERD_tree_1
+	"	4	0
 	.	1	0
 	+	1	0
 	+	1	0
 	+	1	0
 	+	1	0
 
-> /harry/workspace/dnscache-sdn-1.4/src/configs.c
-	"	15	24
-	^	15	25
-	.	15	24
-	+	15	24
+> /HDD/harry/workspace/node-v0.1.100/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
 
-> /harry/workspace/dnscache/src/dnscache.h
-	"	47	0
-	^	16	20
-	.	16	19
+> /HDD/harry/workspace/node-v0.1.100/tools/js2c.py
+	"	1	0
+
+> /HDD/harry/workspace/node-v0.1.100/tools/jsmin.py
+	"	1	0
+
+> /PGRAM/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/.git/COMMIT_EDITMSG
+	"	1	16
+	^	1	17
+	.	1	16
+	+	1	16
+
+> /PGRAM/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/__Tag_List__
+	"	2	0
+	.	1	0
+	+	3	0
+	+	2	0
+	+	1	0
+
+> /PGRAM/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /PGRAM/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /PGRAM/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/.git/rebase-merge/git-rebase-todo
+	"	1	0
+	^	1	1
+	.	1	0
+	+	1	0
+
+> /HDD/harry/workspace/memcached-1.4.25/Makefile
+	"	556	0
+	^	321	69
+	.	173	0
+	+	316	66
+	+	321	68
+	+	173	0
+
+> /HDD/harry/workspace/memcached-1.4.25/__Tag_List__
+	"	250	4
+	.	256	0
+	+	256	0
+
+> /HDD/harry/workspace/memcached-1.4.25/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /HDD/harry/workspace/memcached-1.4.25/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /HDD/harry/workspace/cyrus-sasl-2.1.23/plugins/digestmd5.c
+	"	4035	0
+	.	4035	0
+	+	2718	0
+	+	5	0
+	+	4035	0
+
+> /HDD/harry/workspace/cyrus-sasl-2.1.23/__Tag_List__
+	"	75	4
+	.	137	0
+	+	409	0
+	+	273	0
+	+	137	0
+
+> /HDD/harry/workspace/cyrus-sasl-2.1.23/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /HDD/harry/workspace/cyrus-sasl-2.1.23/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /HDD/harry/workspace/cyrus-sasl-2.1.23/plugins/digestmd5.c:4035
+	"	1	0
+
+> /tmp/test-god/simple.rb
+	"	3	10
+	^	3	11
+	.	3	10
+	+	1	0
+	+	1	9
+	+	5	0
+	+	3	10
+
+> /tmp/test-god/__Tag_List__
+	"	3	0
+	.	4	0
+	+	22	0
+	+	21	0
+	+	20	0
+	+	17	0
+	+	19	0
+	+	16	0
+	+	13	0
+	+	10	0
+	+	6	0
+	+	5	0
+	+	2	0
+	+	4	0
+
+> /tmp/test-god/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /tmp/test-god/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /tmp/test-god/simple.god
+	"	1	0
+	^	5	40
+	.	5	31
+	+	6	0
+	+	3	30
+	+	6	0
+	+	5	31
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/aclocal.m4
+	"	1	0
+
+> /HDD/harry/workspace/postfixlog_git/.git/COMMIT_EDITMSG
+	"	1	0
+	^	6	23
+	.	6	22
+	+	8	1
+	+	4	0
+	+	8	1
+	+	4	0
+	+	8	1
+	+	6	22
+
+> /HDD/harry/workspace/postfixlog_git/__Tag_List__
+	"	2	0
+	.	1	0
+	+	13	0
+	+	12	0
+	+	11	0
+	+	10	0
+	+	9	0
+	+	8	0
+	+	7	0
+	+	6	0
+	+	5	0
+	+	4	0
+	+	3	0
+	+	2	0
+	+	1	0
+
+> /HDD/harry/workspace/postfixlog_git/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /HDD/harry/workspace/postfixlog_git/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /HDD/harry/workspace/postfixlog_git/.git/rebase-merge/git-rebase-todo
+	"	2	0
+	^	2	1
+	.	2	0
+	+	2	0
+
+> /tmp/smtpLog/postfixlog.log
+	"	132	0
+
+> /PGRAM/postfixlog/config.ini
+	"	1	21
+	^	1	22
+	.	1	21
+	+	1	21
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/tags
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> /HDD/harry/workspace/postfixlog_git/HDD/source_code/postfixlog/.gitignore
+	"	7	8
+	^	7	9
+	.	7	8
+	+	12	0
+	+	7	8
+
+> /HDD/harry/workspace/postfixlog_git/.git/config
+	"	13	0
+	^	13	0
+	.	13	0
+	+	13	0
+
+> /HDD/PCONF/rspam/modules.d/fuzzy_check.conf
+	"	1	0
+	^	11	25
+	.	11	24
+	+	28	1
+	+	29	0
+	+	29	0
+	+	29	0
+	+	29	0
+	+	29	0
+	+	29	1
+	+	29	0
+	+	1	0
+	+	1	0
+	+	29	0
+	+	6	27
+	+	1	0
+	+	11	24
+
+> /HDD/PCONF/rspam/__Tag_List__
+	"	2	0
+	.	1	0
 	+	44	0
-	+	41	15
-	+	107	22
-	+	108	0
-	+	57	0
-	+	57	0
-	+	16	19
+	+	43	0
+	+	42	0
+	+	41	0
+	+	41	0
+	+	41	0
+	+	40	0
+	+	39	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	37	0
+	+	36	0
+	+	35	0
+	+	34	0
+	+	33	0
+	+	32	0
+	+	31	0
+	+	30	0
+	+	29	0
+	+	28	0
+	+	27	0
+	+	26	0
+	+	25	0
+	+	24	0
+	+	23	0
+	+	22	0
+	+	21	0
+	+	20	0
+	+	20	0
+	+	20	0
+	+	19	0
+	+	18	0
+	+	17	0
+	+	16	0
+	+	15	0
+	+	14	0
+	+	14	0
+	+	14	0
+	+	13	0
+	+	12	0
+	+	11	0
+	+	10	0
+	+	9	0
+	+	8	0
+	+	7	0
+	+	6	0
+	+	5	0
+	+	4	0
+	+	3	0
+	+	2	0
+	+	1	0
+
+> /HDD/PCONF/rspam/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /HDD/PCONF/rspam/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /HDD/PCONF/rspam/rspamd.conf
+	"	1	0
+	^	30	19
+	.	30	1
+	+	24	0
+	+	22	1
+	+	24	24
+	+	24	0
+	+	15	25
+	+	24	0
+	+	24	16
+	+	15	25
+	+	24	1
+	+	24	0
+	+	20	33
+	+	25	22
+	+	20	33
+	+	25	24
+	+	29	32
+	+	30	1
+
+> /HDD/PCONF/rspam/worker-normal.inc
+	"	1	0
+
+> /tmp/spam/spam70
+	"	1	0
+
+> /HDD/PCONF/rspam/rspamd.systemd.conf
+	"	1	0
+	^	22	0
+	.	23	0
+	+	22	0
+	+	22	0
+	+	23	0
+	+	23	0

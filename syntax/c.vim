@@ -29,7 +29,7 @@ syntax keyword keyword_basic volatile while auto false true
 highlight keyword_basic ctermfg=40
 
 " structure & union & enum
-syntax match struct_name contained "struct \w*[ ),]"hs=s+7,he=e-1
+"syntax match struct_name contained "struct \w*[ ),]"hs=s+7,he=e-1
 syntax match struct_key display "struct [a-zA-Z_]" contains=struct_name
 highlight struct_name ctermfg=99
 highlight link struct_key keyword_basic
